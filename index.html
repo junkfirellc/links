@@ -99,6 +99,7 @@
             background-color: rgba(0,0,0,0.6);
             align-items: center;
             justify-content: center;
+            backdrop-filter: blur(4px);
         }
         .modal:target { display: flex; } /* Activa el modal al hacer clic en Get Quote */
         
@@ -164,21 +165,20 @@
         </div>
 
         <div class="btn-group">
-            <a href="sms:8456591217” class="btn btn-primary">
+            <a href="sms:18456591217" class="btn btn-primary">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
                 Text Us
             </a>
-            <a href="tel:8456591217” class="btn btn-secondary">
+            <a href="tel:18456591217" class="btn btn-secondary">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                 Call Us
             </a>
         </div>
         
-        <a href="PON_EL_LINK_DE_TU_PAGINA_AQUI" class="btn-full" target="_blank">
+        <a href="#" class="btn-full">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1-2-2h-3m-1-4v-4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-4"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
             Visit Website
         </a>
-
         <div class="section-label">About Us</div>
         <div class="card">
             <p>Fast, professional, and reliable junk removal and cleanout services. You point it out, and we do all the heavy lifting.</p>
@@ -196,7 +196,6 @@
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
                     1-2 Hours
                 </div>
-                <!-- El botón ahora apunta al ID del Modal (#quotePopup) -->
                 <a href="#quotePopup" class="btn-quote">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px; vertical-align: middle;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
                     Get Quote
@@ -223,7 +222,7 @@
 
         <div class="section-label">Reviews</div>
 
-        <a href="https://www.thumbtack.com/ny/spring-valley/house-cleaning/junkfire-junk-removal-services/service/461211043908149271?utm_medium=web&utm_source=txt&surface=sp&referrer_pk=461209764035534854" target="_blank" class="review-card">
+        <a href="https://www.thumbtack.com/ny/spring-valley/house-cleaning/junkfire-junk-removal-services/service/461211043908149271?utm_medium=web&amp;utm_source=txt&amp;surface=sp&amp;referrer_pk=461209764035534854" target="_blank" class="review-card">
             <div style="display: flex; align-items: center;">
                 <div style="width: 32px; height: 32px; background: #009fd9; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin-right: 15px; font-weight: bold; font-family: sans-serif; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
                     T
@@ -241,13 +240,10 @@
 
     </div>
 
-    <!-- EL MODAL DE JOTFORM (Ventana Flotante) -->
     <div id="quotePopup" class="modal">
         <div class="modal-content">
-            <!-- Botón para cerrar el Modal -->
             <a href="#" class="close-btn">&times;</a>
             
-            <!-- PON AQUI EL LINK DE TU JOTFORM DENTRO DEL ATRIBUTO src="" -->
             <iframe src="https://form.jotform.com/261866469545069" class="modal-iframe"></iframe>
         </div>
     </div>
